@@ -1,8 +1,10 @@
-﻿using ExpectedObjects;
+﻿using System;
+using ExpectedObjects;
 using Lab.Entities;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
+using CSharpAdvanceDesignTests.Extensions.EmployeeExtensions;
 
 namespace CSharpAdvanceDesignTests
 {
@@ -88,6 +90,11 @@ namespace CSharpAdvanceDesignTests
                 .JoeyThenBy(e => e.Age);
 
             //var actual = employees.JoeyOrderByComboComparer(comboComparer);
+
+            foreach (var employee in actual)
+            {
+                Console.WriteLine(employee);
+            }
 
             var expected = new[]
             {

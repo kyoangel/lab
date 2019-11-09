@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="CombineKeyComparer.cs" />
     <Compile Include="ComboComparer.cs" />
+    <Compile Include="Extensions\EmployeeExtensions\MyOwnLinq.cs" />
     <Compile Include="JoeyAggregateTests.cs" />
     <Compile Include="JoeyAllTests.cs" />
     <Compile Include="JoeyAnyTests.cs" />
@@ -87,7 +88,6 @@
     <Compile Include="JoeyWhereWithDefaultTests.cs" />
     <Compile Include="JoeyZipTests.cs" />
     <Compile Include="MyComparerBuilder.cs" />
-    <Compile Include="MyOwnLinq.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +99,7 @@
       <Name>Lab</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
